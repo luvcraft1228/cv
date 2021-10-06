@@ -1,0 +1,83 @@
+:root {
+    --main-color: #e39038;
+    --accent-color: #a14c19;
+    --white-color: #f1faee;
+    --light-color: #b6b4b4;
+    --dark-color: #24282a;
+
+}
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+    color: var(--light-color);
+    font-family: 'Titillium Web', sans-serif;
+}
+page{
+    height: 100vh;
+}
+body{
+    background-color: var(--dark-color);
+}
+
+/*--------Header--------*/
+
+header{
+    text-align: center;
+    /*background-color: var(--accent-color);*/
+    height: 20vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+h1 {
+    color:var(--accent-color)
+}
+/*------Main body-------*/
+
+main{
+    display:flex;
+    height: 80vh;
+}
+/*------Container-------*/
+container{
+    width: 70%;
+    min-width: 800px;
+    display: flex;
+    flex-flow: column;
+    padding:4rem;
+
+    font-size: 1.1rem;
+}
+container ul{
+    font-size: 0.9rem;
+    margin: 2px 0 2px 20px;
+
+    height: 100%;
+}
+
+/*-------Sidebar-------*/
+sidebar{
+    padding:4rem;
+    margin:3rem;
+    max-width: 25%;
+    min-width: 300px;
+    border-radius: 1rem;
+    border: 2px dashed var(--accent-color);
+    /*background-color: var(--light-color);*/
+}
+
+/*-------Nav-------*/
+
+nav{
+        text-align: center;
+    justify-self: flex-end;
+
+
+}
+nav a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
