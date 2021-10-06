@@ -60,7 +60,7 @@ container ul{
 sidebar{
     padding:4rem;
     margin:3rem;
-    max-width: 25%;
+
     min-width: 300px;
     border-radius: 1rem;
     border: 2px dashed var(--accent-color);
