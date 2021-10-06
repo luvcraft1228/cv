@@ -1,83 +1,124 @@
 :root {
-    --main-color: #e39038;
-    --accent-color: #a14c19;
-    --white-color: #f1faee;
-    --light-color: #b6b4b4;
-    --dark-color: #24282a;
-
+  --main-color: #e39038;
+  --accent-color: #a14c19;
+  --white-color: #f1faee;
+  --light-color: #b6b4b4;
+  --dark-color: #24282a;
 }
-*{
-    margin:0;
-    box-sizing: border-box;
-    padding: 0;
-    color: var(--light-color);
-    font-family: 'Titillium Web', sans-serif;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  color: var(--light-color);
+  font-family: "Titillium Web", sans-serif;
 }
-page{
-    height: 100vh;
+page {
+  height: 100vh;
 }
-body{
-    background-color: var(--dark-color);
+body {
+  background-color: var(--dark-color);
 }
 
 /*--------Header--------*/
 
-header{
-    text-align: center;
-    /*background-color: var(--accent-color);*/
-    height: 20vh;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+header {
+  text-align: center;
+  /*background-color: var(--accent-color);*/
+  height: 20vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-top:40px;
 }
 h1 {
-    color:var(--accent-color)
+  color: var(--accent-color);
 }
 /*------Main body-------*/
 
-main{
-    display:flex;
-    height: 80vh;
+main {
+  display: flex;
+  height: 80vh;
+  margin-top:40px;
 }
 /*------Container-------*/
-container{
-    width: 70%;
-    min-width: 800px;
-    display: flex;
-    flex-flow: column;
-    padding:4rem;
+container {
+  width: 70%;
+  min-width: 800px;
+  display: flex;
+  flex-flow: column;
+  padding: 3rem;
 
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
-container ul{
-    font-size: 0.9rem;
-    margin: 2px 0 2px 20px;
+container ul {
+  margin-top: 15px;
+  margin: 2px 0 0 20px;
+    
+  height: 100%;
+}
+.mainList{
+    margin-bottom:40px;
+}
+container ul li {
+    font-size:1rem;
+    
+}
+h2{
+    border-top: 2px dashed var(--accent-color);
+    padding-top:10px;
 
-    height: 100%;
 }
 
 /*-------Sidebar-------*/
-sidebar{
-    padding:4rem;
-    margin:3rem;
+body{
+    font-size:3rem;
+}
 
-    min-width: 300px;
-    border-radius: 1rem;
-    border: 2px dashed var(--accent-color);
-    /*background-color: var(--light-color);*/
+sidebar {
+    font-size: 1.1rem;
+  padding: 4rem;
+  margin: 3rem;
+  height: fit-content;
+  min-width: 300px;
+  border-radius: 1rem;
+  border: 2px dashed var(--accent-color);
+  /*background-color: var(--light-color);*/
 }
 
 /*-------Nav-------*/
 
-nav{
-        text-align: center;
-    justify-self: flex-end;
-
-
+nav {
+  text-align: center;
+  justify-self: flex-end;
 }
-nav a{
-    text-decoration: none;
-    cursor: pointer;
+nav a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
+/**Ortientation portrait**/
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  page {
+    height: 100%;
+    font-size: 3rem;
+    
+  }
+  page ul li{
+font-size: 3rem;
+  }
+  main {
+    flex-flow: column;
 
+    align-items: center;
+  }
+  container {
+    min-width: 100px;
+    width:85%;
+    margin:3rem 0 1rem 0;
+    padding:0;
+  }
+  sidebar {
+    margin: 1rem;
+    font-size: 3rem;
+  }
+}
