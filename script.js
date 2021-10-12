@@ -1,7 +1,7 @@
 const rButton = document.querySelector("#right");
 const lButton = document.querySelector("#left");
 const pages = document.querySelectorAll("page");
-
+const button = document.querySelectorAll()
 let index = 0;
 window.addEventListener("orientationchange", (event) => {
   let angle = event.target.screen.orientation.angle;
